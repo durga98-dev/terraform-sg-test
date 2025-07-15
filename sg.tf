@@ -5,4 +5,5 @@ module "mysql_sg"{
     sg_name = "mysql"
     sg_description = "Created for MySQL instances"
     vpc_id = data.aws_ssm_parameter.vpc_id.value
+    common_tags = var.common_tags
 }
