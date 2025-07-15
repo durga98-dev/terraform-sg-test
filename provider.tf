@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "expense-vpc-bucket"
+    bucket = "expense-sg-bucket"
     key = "sg_info" # you should have unique keys within the bucket, same key should not be used in other projects or repos
     region = "us-east-1"
     dynamodb_table = "state-locking"
